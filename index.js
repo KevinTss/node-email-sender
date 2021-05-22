@@ -4,17 +4,17 @@
 // Votre nom qui apparaitra au bas du mail
 const SENDER_NAME = 'John';
 // Votre email depuis lequel le mail sera envoyer (il doit être le même que le compte mailjet)
-const SENDER_EMAIL = 'John@gmail.com';
+const SENDER_EMAIL = 'john.doe@email.com';
 
+// Ces deux information se trouvent dans votre compte mailjet
 const MAILJET_API_KEY = '19769868bb485975960e579cf0a7dbef';
 const MAILJET_SECRET_KEY = '7d28803434badc8ee1a909b65f027e70';
 
+// Les index pour lequels le mail seront envoyé (correspondant au ligne de l'export excel (CSV))
 const INDEX_START = 1;
-const INDEX_END = 2;
+const INDEX_END = 200;
 
-/**
- * Remplacer `false` par `true` pour passer en mode test
- */
+// Remplacer `false` par `true` pour passer en mode test
 const TEST = true;
 
 ////////////////////////////////////////////////////
