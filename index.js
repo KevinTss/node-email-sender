@@ -216,6 +216,8 @@ fs.createReadStream('./listing-deputes-senateurs-FR.csv')
   .on('data', (row) => {
     count++;
 
+    let localCount = count;
+
     if (count < INDEX_START || count > INDEX_END) return;
 
     mailjet
@@ -252,7 +254,7 @@ fs.createReadStream('./listing-deputes-senateurs-FR.csv')
         // console.log(result);
         // console.log(result.body);
         console.log(
-          `${count}) mail successfuly sent to: ${
+          `${localCount}) mail successfuly sent to: ${
             TEST ? SENDER_EMAIL : getEmail(row.emails)
           }`
         );
